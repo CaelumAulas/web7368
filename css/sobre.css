@@ -1,0 +1,22 @@
+body {
+  font-family: 'Lucida Sans Unicode', Arial, sans-serif;
+  color: blue;
+}
+
+h1 {
+  background-image: url(../img/background-sobre.png); 
+  background-color: rgb(113, 206, 121); 
+  padding-top: 30px; 
+  margin-bottom: 100px;
+}
+
+figure {
+  border: 10px solid rgba(0, 0, 0, .5);
+  background-color: red;
+  text-align: right;
+}
+
+figcaption {
+  font-style: italic;
+  background-color: yellow;
+}

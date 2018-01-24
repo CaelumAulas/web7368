@@ -24,6 +24,16 @@ figure {
   margin: 30px;
 }
 
+#centro-distribuicao {
+  width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#familia-pelho {
+  float: right;
+}
+
 figcaption {
   font-style: italic;
   margin-bottom: 10px;
@@ -32,4 +42,16 @@ figcaption {
 p {
   padding: 0 45px;
   text-indent: 15px;
+}
+
+#rodape {
+  color: #777;
+  margin: 30px 0;
+  padding: 30px 0;
+}
+
+#rodape img {
+  margin-right: 30px;
+  vertical-align: middle;
+  width: 94px;
 }

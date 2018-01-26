@@ -1,0 +1,19 @@
+body {
+  font-family: sans-serif;
+}
+
+.link {
+  font-size: 40px;
+  color:#c0392b;
+  text-decoration: none;
+  font-weight: bold;
+
+  transition: color 1s linear;
+}
+
+.link:hover {
+  border-bottom: 3px solid #2ecc71;
+  color: #f39c12;
+
+  transition: none;
+}

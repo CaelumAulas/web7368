@@ -4,13 +4,21 @@ body {
 }
 
 .container {
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   width: 940px;
+}
+
+header {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
 }
 
 .sacola {
   /* background-color: red; */
-  background: url(../img/sacola.png) right top no-repeat;
+  background:url(../img/sacola.png) right top no-repeat;
   /* background-image: url(../img/sacola.png);
   background-repeat: no-repeat;
   background-position:  right top; */
@@ -19,10 +27,22 @@ body {
   text-align: right;
   padding-right: 35px;
   padding-top: 8px;
+
+  position: absolute;
+  top:0;
+  right: 0;
+
+}
+
+.menu-opcoes {
+  bottom: 0;
+  right: 0;
+  position: absolute;
 }
 
 .menu-opcoes ul {
   font-size: 15px;
+
 }
 
 .menu-opcoes ul li {
@@ -33,3 +53,72 @@ body {
 .menu-opcoes a {
   color: #003366;
 }
+
+.busca,
+.menu-departamentos {
+  background: silver;
+  float: left;
+  margin-bottom: 10px;
+  width: 220px;
+}
+
+.menu-departamentos {
+  clear: left; /* limpa a influencia do float left do .busca - porem nao limpa o seu proprio float left */
+}
+
+.busca h2,
+.menu-departamentos h2 {
+  font-weight: bold;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.menu-departamentos a {
+  background: white;
+  color: #333;
+  display: block;
+  margin-bottom: 2px;
+  padding: 8px 10px;
+  text-decoration: none;
+  font-variant: small-caps;
+}
+
+.busca form {
+  padding: 0 10px 10px;
+}
+
+.banner {
+  text-align: right;
+}
+
+
+.painel {
+  float: left;
+  width: 50%;
+}
+
+.painel li {
+  background: yellow;
+  display: inline-block;
+  margin-bottom: 5px;
+  vertical-align: top;
+  width: 152px;
+}
+
+.painel img {
+  width: 100%;
+}
+
+.novidades {
+  background: red;
+}
+
+.mais-vendidos {
+  background: blue;
+}
+
+
+
+
+
+

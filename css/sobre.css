@@ -1,47 +1,48 @@
 body {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   color: #333333;
-  font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
   width: 940px;
   margin-left: auto;
   margin-right: auto;
+  /*para usar margin-left/right com valor de auto, precisa colocar a largura (width)*/
 }
 
 h1 {
-  background-image: url(../img/sobre-background.jpg); 
+  background-image: url(../img/sobre-background.jpg); /*trocar esse fundo feio*/
   padding: 10px;
 }
 
 h2 {
-  border-bottom: 1px solid #333333;
+  border-bottom: 2px solid #333333;
   margin-top: 30px;
 }
 
+p {
+  padding: 0 45px;
+  text-indent: 15px;/*dá espaço antes da primeira letra do paragrafo*/
+}
+
 figure {
-  background-color: #F2EDED;
-  border: 1px solid #CCC;
+  background-color: #f2eded;
+  border: 2px solid #ccc; /*na apostila eh 1px*/
   text-align: center;
   padding: 15px;
   margin: 30px;
 }
 
+figcaption {
+  font-style: italic;
+  margin-top: 10px;
+}
+
 #centro-distribuicao {
+  margin: 0 auto;
   width: 550px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 #familia-pelho {
   float: right;
-}
-
-figcaption {
-  font-style: italic;
-  margin-bottom: 10px;
-}
-
-p {
-  padding: 0 45px;
-  text-indent: 15px;
+  margin: 0 0 10px 10px;
 }
 
 #rodape {
@@ -55,3 +56,26 @@ p {
   vertical-align: middle;
   width: 94px;
 }
+
+/*----------------------------------------------------------------------------*/
+
+/* primeira letra de todos os parágrafos em negrito */
+p::first-letter {
+  font-weight: bold;
+}
+
+/* removendo a indentação somente do primeiro parágrafo */
+h1 + p {
+  text-indent: 0;
+}
+
+/* primeira linha de cada parágrafo */
+p::first-line {
+  font-variant: small-caps;
+}
+
+/* Exercicio Opcional 5.5
+para funcionar essa funcionalidade, é preciso apagar a funcionalidade de cima p::first-line, senão todos ficam alterados
+:not(p) + p::first-line {
+  font-variant: small-caps;
+} */

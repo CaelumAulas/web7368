@@ -1,0 +1,44 @@
+.produto h1 {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.produto h2 {
+    font-size: 1.2em;
+    font-style: italic;
+    margin-bottom: 1em;
+}
+
+.produto label img {
+    display: none;
+}
+
+.produto input:checked + label img {
+   display: inline; 
+}
+
+.produto label::before {
+    content: '';
+    background: silver;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.produto label[for=azul]::before {
+    background: blue;
+}
+
+.produto label[for=verde]::before {
+    background: green;
+}
+
+.produto label[for=rosa]::before {
+    background: pink;
+}
+
+.produto input[type=radio] {
+    opacity: 0;
+    text-indent: -999999em;
+}

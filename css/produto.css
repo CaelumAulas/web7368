@@ -9,8 +9,14 @@
     margin-bottom: 1em;
 }
 
+.cores {
+    position: relative;
+}
+
 .produto label img {
     display: none;
+    max-width: 100%;
+    margin-top: 50px;
 }
 
 .produto input:checked + label img {
@@ -24,21 +30,59 @@
     height: 50px;
     width: 50px;
     border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.produto input:checked + label::before {
+    border: 4px solid rgba(0,0,0,.5);
+    padding: 5px;
 }
 
 .produto label[for=azul]::before {
-    background: blue;
+    background: #66F;
+    left: 0;
 }
 
 .produto label[for=verde]::before {
-    background: green;
+    background: #3C6;
+    left: 60px;
 }
 
 .produto label[for=rosa]::before {
-    background: pink;
+    background: #F66;
+    left: 120px;
 }
 
 .produto input[type=radio] {
-    opacity: 0;
-    text-indent: -999999em;
+    opacity: 1;
+    position: absolute;
+    top: 45px;
+    left: 10px;
+}
+
+.produto legend {
+    
+    /*font: bold 0.9em/2.5 Arial;*/ 
+    /* isso aqui é a mesma coisa que as 4 propriedades abaixo:*/
+    font-weight: bold;
+    font-size: .9em;
+    line-height: 2.5;
+    font-family: Arial;
+
+    text-transform: uppercase;
+}
+
+button.comprar {
+    background: #91bd3c;
+    border: none;
+    color: #333;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    box-shadow: 0 1px 3px #777;
+    display: block;
+    padding: .5em 1em;
+    margin: 1em 0;
 }

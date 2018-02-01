@@ -84,5 +84,100 @@ button.comprar {
     box-shadow: 0 1px 3px #777;
     display: block;
     padding: .5em 1em;
+    margin: 1em auto;
+}
+
+.detalhes {
+    padding: 2em 0;
+}
+
+.detalhes h2 {
+    font-size: 1.5em;
+    line-height: 2;
+}
+
+.detalhes p{
     margin: 1em 0;
+    font-size: 1em;
+    line-height: 1.5;
+    max-width: 36em;
+}
+
+@media(min-width: 500px){
+    .detalhes {
+        font-size: 1.2em;
+    }
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 4px;
+}
+
+thead {
+    background: #999;
+}
+
+thead th {
+    font-weight: bold;
+    padding: .3em 1em;
+    text-align: center;
+}
+
+td {
+    padding: .3em;
+}
+
+tr:nth-child(2n){
+    background: #ccc;
+}
+
+td:first-child {
+    font-style: italic;
+}
+
+tfoot td {
+    text-align: right;
+}
+
+/* breakpoint */
+@media(min-width: 630px){
+
+    .produto {
+        position: relative;
+        padding-left: 40%;
+        margin: 40px 0;
+    }
+
+    .cores {
+        position: static;
+    }
+
+    .cores label::before {
+        position: static;
+    }
+    
+    .cores label img {
+        position: absolute;
+        top: 0;
+        left: 40px;
+        margin-top: 0;
+        width: auto;
+        max-height: 100%;
+        border: 2px solid #ccc;
+        z-index: 1;
+    }
+
+    .produto input[type=radio]{
+        left: 150px;
+    }
+
+    button.comprar {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .principal {
+        min-height: calc(100vh - 88px - 95px) ;
+    }
 }

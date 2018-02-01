@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/mobile.css" media="(max-width: 939px)">
     <link rel="stylesheet" href="css/produto.css">
 
 </head>
@@ -44,13 +44,12 @@
         </nav>
     </header>
 
-    <main class="container">
-
+    <main class="principal container">
         <section class="produto">
             <h1>Camiseta Ecko Caveira bad to the bone</h1>
             <h2>por apenas R$ 48,95</h2>
 
-            <form>
+            <form action="checkout.html">
                 <fieldset class="cores">
                     <legend>Escolha a cor</legend>
 
@@ -73,11 +72,58 @@
 
                 <fieldset>
                     <legend>Escolha o tamanho</legend>
-                    <input type="text">
+                    <input type="range" value="42" min="36" max="48" step="2">
+                    <span>42</span>
                 </fieldset>
                 
                 <button class="comprar">Comprar</button>
             </form>
+        </section>
+
+        <section class="detalhes">
+            <h2>Detalhes do produto</h2>
+            <p>
+                Camiseta confortável ideal para eventos casuais!
+            </p>
+            <p>
+                Camiseta manga curta, gola redonda. Possui estampa da Caveira e descritivo frontal e costas.
+            </p>
+
+            <table>
+                <thead>
+                    <tr>
+                       <th>Característica</th>
+                       <th>Detalhe</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Modelo</td>
+                        <td>Cardigã 7845</td>
+                    </tr>
+                    <tr>
+                        <td>Material</td>
+                        <td>Algodão</td>
+                    </tr>
+                    <tr>
+                        <td>Cores</td>
+                        <td>Azul,Rosa,Verde</td>
+                    </tr>
+                    <tr>
+                        <td>um</td>
+                        <td rowspan="2">dois</td>
+                    </tr>
+                    <tr>
+                        <td>tres</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">oiii</td>
+                    </tr>
+                </tfoot>
+            </table>
+
         </section>
     </main>
 

@@ -6,27 +6,111 @@
     <title>Finalizar Comprar - Mirror Fashion</title>
 
     <link rel="stylesheet" href="css/bootstrap.css">
+
+    <style>
+        
+        .checkout .btn::before {
+            content: "\e125";
+            font-family: 'Glyphicons Halflings';
+        }
+    
+    </style>
     
 </head>
-<body>
-    <h1>Finalizar Comprar Mirror Fashion</h1>
+<body class="checkout">
+    <header class="jumbotron">
+        <div class="container">
+            <h1>Ótima escolha</h1>
+            <p>Obrigado por comprar na Mirror Fashion! Preencha seus dados para efetivar a compra.</p>
+        </div>
+    </header>
 
-
-    Estilos
-        Responsividade (mobile, desktop)
-        (RESET CSS)compatibilidade entre navegadores
-        Espaçamentos, margens, fontes padronizadas
-        Icones
-        Bootstrap
-
-
-
+    <main class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <aside class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Sua Compra</h3>
+                    </div>
+                    <div class="panel-body">
+                        <img src="img/produtos/foto3-rosa.png" alt="Cardigam Rosa" class="img-responsive img-thumbnail hidden-xs">
         
+                        <dl>
+                            <dt>Produto:</dt>
+                            <dd>Cardigã Rosa Chique Colcci</dd>
+        
+                            <dt>Cor:</dt>
+                            <dd>Rosa</dd>
+        
+                            <dt>Tamanho:</dt>
+                            <dd>38</dd>
+        
+                            <dt>Preço:</dt>
+                            <dd>R$ 347,78</dd>
+                        </dl>
+                    </div>
+                </aside>
+            </div>
+                    
+            <form class="col-md-8">
+                <div class="row">
+                    <fieldset class="col-lg-6">
+                        <legend>Dados Pessoais</legend>
+                        
+                        <div class="form-group">
+                            <label for="nome">Nome completo:</label>
+                            <input type="text" class="form-control" id="nome">
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="cpf">CPF</label>
+                            <input type="text" class="form-control" id="cpf">
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="spam">
+                                <input type="checkbox" id="spam" checked>
+                                Quero receber spam da Mirror Fashion
+                            </label>
+                        </div>
+                    </fieldset>
+        
+                    <fieldset class="col-lg-6">
+                        <legend>Cartão de Crédito</legend>
+        
+                        <div class="form-group">
+                            <label for="numero-cvv">Número - CVV</label>
+                            <input type="text" id="numero-cvv" class="form-control">
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="bandeira">Bandeira</label>
+                            <select id="bandeira" class="form-control">
+                                <option selected disabled>Selecione uma bandeira</option>
+                                <option>Visa</option>
+                                <option>Mastercard</option>
+                                <option>Amex</option>
+                            </select>
+                        </div>
+        
+                        <div class="form-group">
+                            <label for="validade">Validade</label>
+                            <input type="month" id="validade" class="form-control">
+                        </div>
+                    </fieldset>
+                </div>
 
-
-
-    
+                <button class="btn btn-success btn-lg pull-right">
+                    Finalizar compra
+                </button>
+                
+            </form>
+        </div>
+    </main>
 </body>
 </html>
-
-

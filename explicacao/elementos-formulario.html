@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        div {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="" autocomplete="on">
+
+        <fieldset>
+            <legend>Inputs</legend>
+
+            <div>
+                <label for="">texto</label>
+                <input type="text" placeholder="preencha seu nome">
+            </div>
+        
+            <div>
+                <label for="n">numero*</label>
+                <input type="number" required>
+            </div>
+
+            <div>
+                <label for="">senha*</label>
+                <input type="password" required autofocus>
+            </div>
+
+            <div>
+                <label for="">telefone</label>
+                <input type="tel" required>
+            </div>
+
+
+            <div>
+                <label for="">url</label>        
+                <input type="url" required>
+            </div>
+
+            <div>
+                <label for="">email</label>        
+                <input type="email">
+            </div>
+
+            <div>
+                <label for="">date</label>        
+                <input type="date">
+                <input type="week">
+                <input type="month">
+                <input type="time">
+            </div>
+
+            <div>
+                <label for="">color</label>
+                <input type="color">
+            </div>
+
+            <div>
+                <label for="">file</label>
+                <input type="file">
+            </div>
+
+            <div>
+                <label for="">hidden</label>
+                <input type="hidden" value="">
+            </div>
+
+            <div>
+                <label for="">color</label>
+                <input type="image" src="../img/busca.png">
+            </div>
+
+            <div>
+                <label for="">botoes</label>
+                <input type="submit">
+                <input type="reset" value="resetar">
+            </div>
+
+            <div>
+                <label for="">search</label>
+                <input type="search" value="" list="alunos">
+
+                <datalist id="alunos">
+                    <option value="Vanessa">Vanessa</option>
+                    <option value="Bruno">Bruno</option>
+                    <option value="Sindi">Sindi</option>
+                    <option value="Maria">Maria</option>
+                </datalist>
+            </div>
+
+            <div>
+                <label for="">animais: selecione os que vc gosta</label>
+                <br>
+                <label>
+                    Gato
+                    <input type="checkbox" name="animais" value="gato">
+                </label>
+
+                <label>
+                    Cachorro
+                    <input type="checkbox" name="animais" value="cachorro" id="">
+                </label>
+
+                <label>
+                    Peixe
+                    <input type="checkbox" name="animais" value="Peixe" id="">
+                </label>
+            </div>
+        
+        </fieldset>
+
+        <fieldset>
+            <legend>Não inputs</legend>
+
+            <div>
+                <label for="uf">UF</label>
+                <select id="uf">
+                    <option selected disabled>Selecione uma bandeira</option>
+                    
+                    <optgroup label="sul">
+                        <option value="RS">RS</option>
+                        <option value="SC">SC</option>
+                    </optgroup>
+
+                    <optgroup label="sudeste">
+                        <option value="SP">SP</option>
+                        <option value="RJ">RJ</option>
+                    </optgroup>
+
+                </select>
+            </div>
+
+            <div>
+                <label for="cores">cores</label>
+                <select id="cores" multiple>
+                    <option value="azul">azul</option>
+                    <option value="rosa">rosa</option>
+                    <option value="ama">amarelo</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="">textarea</label>
+                <textarea name="" id="">
+                    preencha sua mensagem
+                </textarea>
+            </div>
+
+
+
+
+        </fieldset>
+
+
+        <button>
+            enviar!
+        </button>
+
+    </form>
+
+</body>
+</html>
